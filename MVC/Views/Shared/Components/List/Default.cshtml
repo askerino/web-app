@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<MVC.Models.Book>
+
+<table class="table">
+    <tread>
+        <tr>
+            <th>書名</th>
+            <th>価格</th>
+            <th>出版社</th>
+            <th>配布サンプル</th>
+        </tr>
+    </tread>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.Price</td>
+                <td>@item.Publisher</td>
+                <td>@item.Sample</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<h2>Text</h2>
+<p>
+    @if (true)
+    {
+        <text>Hello, </text>
+        @: World!
+    }
+</p>
+

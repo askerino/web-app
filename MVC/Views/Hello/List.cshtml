@@ -1,0 +1,10 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<MVC.Models.Book>
+@{
+    ViewData["Title"] = "List";
+}
+<h2>List</h2>
+<partial name="_Time" />
+@await Component.InvokeAsync("List", new {price = 3000})
